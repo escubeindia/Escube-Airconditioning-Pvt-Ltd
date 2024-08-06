@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escube Airconditioning Pvt. Ltd.</title>
     <link rel="icon" href="https://i.imgur.com/ShBvS4Z.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
@@ -16,6 +17,7 @@
             align-items: center;
             height: 100vh;
             color: #333;
+            overflow-x: hidden; /* Prevent horizontal scroll on the entire page */
         }
         .container {
             background-color: #fff;
@@ -23,8 +25,17 @@
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             text-align: center;
-            max-width: 350px;
-            width: 100%;
+            max-width: 350px; /* Adjusted for better scaling on mobile */
+            width: 90%;
+            height: 100%; /* Adjust the height */
+            position: center;
+            margin: auto;
+        }
+        .daikin-logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 75px;
         }
         .logo {
             max-width: 150px;
@@ -33,9 +44,8 @@
         h1 {
             margin-bottom: 15px;
             color: #333;
-            font-family: 'Arial', sans-serif;
-            font-weight: normal;
-            font-size: 24px;
+            font-weight: bold;
+            font-size: 22px;
         }
         a, .tab {
             display: block;
@@ -66,13 +76,13 @@
         }
         .website:hover {
             background-color: #016c92; /* Dark blue */
-       }
+        }
         .email {
             background-color: #d32f2f; /* Red */
         }
         .email:hover {
-            background-color: #b71c1c; /* Darker red */
-        }
+            background-color: #b71c1c; /* Darker red */
+        }
         .social-media {
             display: flex;
             justify-content: center;
@@ -110,10 +120,38 @@
             vertical-align: middle;
             margin-right: 8px;
         }
+        .clients-section {
+            margin-top: 100px;
+            padding: 10px;
+            position: relative;
+        }
+        .clients-section::before {
+            content: 'OUR CLIENTS';
+            display: block;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .clients-scroll-wrapper {
+            display: flex;
+            align-items: center;
+            overflow: hidden; /* Hide scroll bar */
+            white-space: nowrap;
+        }
+        .client-logo {
+            display: inline-block;
+            margin: 10px;
+        }
+        .client-logo img {
+            max-width: 100px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="https://www.daikin.com/-/media/Project/Daikin/daikin_com/dg_common/images/logo_daikin-png.png?rev=-1&hash=1F64F477E5561302A1D2A31DC3D59580" alt="Daikin Logo" class="daikin-logo">
         <img src="https://i.imgur.com/GEPKm3U.png" alt="Company Logo" class="logo">
         <h1>Escube Airconditioning Pvt. Ltd.</h1>
         <a href="tel:+91 22 2582 7851" class="contact-info">
@@ -151,17 +189,90 @@
                 <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter Icon">
             </a>
         </div>
+        <div class="clients-section">
+            <div class="clients-scroll-wrapper" id="clientsCarousel">
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/p&g.png" alt="Client 1">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/reliance-01.png" alt="Client 2">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/tata.png" alt="Client 3">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/taj.png" alt="Client 4">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/wipro.png" alt="Client 5">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/infy.png" alt="Client 6">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/inox.png" alt="Client 7">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/ibm.png" alt="Client 8">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/birla.png" alt="Client 9">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/hiranandani.png" alt="Client 10">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/star.png" alt="Client 11">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/cisco.png" alt="Client 12">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/mspl.png" alt="Client 13">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/sdm.png" alt="Client 14">
+                </div>
+                <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/jpmorgan.png" alt="Client 15">
+                </div>
+                 <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/shoppers-stop.png" alt="Client 16">
+                </div>
+                 <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/neelkanth.png" alt="Client 17">
+                </div>
+                 <div class="client-logo">
+                    <img src="https://www.escubeindia.net/assets/img/clients/zodiak.png" alt="Client 18">
+                </div>
+            </div>
+        </div>
     </div>
-
     <script>
         function toggleLocations() {
-            var locationsList = document.getElementById('locationsList');
-            if (locationsList.style.display === 'none' || locationsList.style.display === '') {
-                locationsList.style.display = 'block';
+            var list = document.getElementById("locationsList");
+            if (list.style.display === "block") {
+                list.style.display = "none";
             } else {
-                locationsList.style.display = 'none';
+                list.style.display = "block";
             }
         }
+
+        const carousel = document.getElementById('clientsCarousel');
+        let scrollAmount = 0;
+        const scrollStep = 1; // Adjust to control scroll speed
+        const scrollDelay = 15; // Adjust to control scroll delay
+
+        function autoScroll() {
+            carousel.scrollLeft += scrollStep;
+            scrollAmount += scrollStep;
+            if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+                scrollAmount = 0;
+                carousel.scrollLeft = 0;
+            }
+        }
+
+        setInterval(autoScroll, scrollDelay);
     </script>
 </body>
 </html>
